@@ -1,0 +1,78 @@
+state,year,case_action,case_type,age_group,count,for_total
+Arizona,2019,Ambiguous,Guardianship ONLY,Adults ONLY,2383,Y
+Arizona,2019,Ambiguous,Guardianship ONLY,Minors ONLY,3608,N
+Arizona,2019,Ambiguous,Conservatorship ONLY,Adults ONLY,4003,N
+Arizona,2019,Ambiguous,Conservatorship ONLY,Minors ONLY,1334,N
+Arkansas,2019,Ambiguous,G+C+Joint,Adults ONLY,1164,Y
+Arkansas,2019,Ambiguous,G+C+Joint,Minors ONLY,2692,N
+Arkansas,2019,Ambiguous,G+C+Joint,Adults+Minors,141,N
+Colorado,2019,Initiated+Reopened,Guardianship ONLY,Adults ONLY,934,Y
+Colorado,2019,Initiated+Reopened,Conservatorship ONLY,Adults ONLY,235,N
+Colorado,2019,Initiated+Reopened,Joint G/C ONLY,Adults ONLY,483,Y
+Colorado,2019,Initiated+Reopened,Guardianship ONLY,Minors ONLY,950,N
+Colorado,2019,Initiated+Reopened,Conservatorship ONLY,Minors ONLY,318,N
+Colorado,2019,Initiated+Reopened,Joint G/C ONLY,Minors ONLY,35,N
+Connecticut,2019,Ambiguous,G+C+Joint,Adults ONLY,4700,Y
+District of Columbia,2019,Initiated ONLY,G+C+Joint,Adults ONLY,544,Y
+District of Columbia,2019,Reopened ONLY,G+C+Joint,Adults ONLY,31,Y
+District of Columbia,2019,Initiated ONLY,Conservatorship ONLY,Minors ONLY,33,N
+District of Columbia,2019,Reopened ONLY,Conservatorship ONLY,Minors ONLY,0,N
+Idaho,2019,Initiated ONLY,Guardianship ONLY,Minors ONLY,621,N
+Idaho,2019,Initiated ONLY,Guardianship ONLY,Adults ONLY,170,Y
+Idaho,2019,Initiated ONLY,Conservatorship ONLY,Minors ONLY,42,N
+Idaho,2019,Initiated ONLY,Conservatorship ONLY,Adults ONLY,27,N
+Idaho,2019,Initiated ONLY,Joint G/C ONLY,Minors ONLY,49,N
+Idaho,2019,Initiated ONLY,Joint G/C ONLY,Adults ONLY,424,Y
+Kansas,2019,Ambiguous,Guardianship ONLY,Adults ONLY,472,Y
+Kansas,2019,Ambiguous,Joint G/C ONLY,Adults ONLY,670,Y
+Kansas,2019,Ambiguous,Guardianship ONLY,Minors ONLY,488,N
+Kansas,2019,Ambiguous,Joint G/C ONLY,Minors ONLY,316,N
+Kansas,2019,Ambiguous,Conservatorship ONLY,Adults+Minors,120,N
+Kentucky,2019,Initiated+Reopened,G+C+Joint,Adults ONLY,1493,Y
+Massachusetts,2019,Initiated+Reopened,Guardianship ONLY,Adults ONLY,4059,Y
+Massachusetts,2019,Initiated+Reopened,Guardianship ONLY,Minors ONLY,4586,N
+Michigan,2019,Initiated ONLY,Guardianship ONLY,Adults ONLY,12655,Y
+Michigan,2019,Reopened ONLY,Guardianship ONLY,Adults ONLY,0,Y
+Michigan,2019,Initiated ONLY,Conservatorship ONLY,Adults ONLY,3401,N
+Michigan,2019,Reopened ONLY,Conservatorship ONLY,Adults ONLY,0,N
+Michigan,2019,Initiated ONLY,Guardianship ONLY,Minors ONLY,5145,N
+Michigan,2019,Reopened ONLY,Guardianship ONLY,Minors ONLY,0,N
+Michigan,2019,Initiated ONLY,Conservatorship ONLY,Minors ONLY,896,N
+Michigan,2019,Reopened ONLY,Conservatorship ONLY,Minors ONLY,0,N
+Minnesota,2019,Initiated ONLY,G+C+Joint,Adults ONLY,2658,Y
+Minnesota,2019,Initiated ONLY,G+C+Joint,Minors ONLY,236,N
+Missouri,2019,Ambiguous,G+C+Joint,Adults ONLY,2922,Y
+Missouri,2019,Ambiguous,G+C+Joint,Minors ONLY,4200,N
+Nebraska,2019,Ambiguous,G+C+Joint,Adults ONLY,2109,Y
+New Hampshire,2019,Initiated ONLY,G+C+Joint,Adults ONLY,945,Y
+New Hampshire,2019,Initiated ONLY,G+C+Joint,Minors ONLY,90,N
+New Mexico,2019,Initiated ONLY,Guardianship ONLY,Adults ONLY,240,Y
+New Mexico,2019,Reopened ONLY,Guardianship ONLY,Adults ONLY,42,Y
+New Mexico,2019,Initiated ONLY,Conservatorship ONLY,Adults ONLY,18,N
+New Mexico,2019,Reopened ONLY,Conservatorship ONLY,Adults ONLY,6,N
+New Mexico,2019,Initiated ONLY,Joint G/C ONLY,Adults ONLY,327,Y
+New Mexico,2019,Reopened ONLY,Joint G/C ONLY,Adults ONLY,87,Y
+New Mexico,2019,Initiated ONLY,Guardianship ONLY,Minors ONLY,65,N
+New Mexico,2019,Reopened ONLY,Guardianship ONLY,Minors ONLY,28,N
+New Mexico,2019,Initiated ONLY,Conservatorship ONLY,Minors ONLY,30,N
+New Mexico,2019,Reopened ONLY,Conservatorship ONLY,Minors ONLY,10,N
+New Mexico,2019,Initiated ONLY,Joint G/C ONLY,Minors ONLY,25,N
+New Mexico,2019,Reopened ONLY,Joint G/C ONLY,Minors ONLY,6,N
+North Dakota,2019,Ambiguous,Conservatorship ONLY,Adults ONLY,9,N
+North Dakota,2019,Ambiguous,Conservatorship ONLY,Minors ONLY,30,N
+North Dakota,2019,Ambiguous,Guardianship ONLY,Adults ONLY,314,Y
+North Dakota,2019,Ambiguous,Guardianship ONLY,Minors ONLY,267,N
+Ohio,2019,Initiated+Reopened,Guardianship ONLY,Adults ONLY,6991,Y
+Ohio,2019,Initiated+Reopened,Guardianship ONLY,Minors ONLY,1801,N
+Oregon,2019,Initiated+Reopened,G+C+Joint,Adults ONLY,1355,Y
+Oregon,2019,Initiated+Reopened,G+C+Joint,Minors ONLY,785,N
+Pennsylvania,2019,Initiated+Reopened,G+C+Joint,Adults ONLY,3304,Y
+Utah,2019,Initiated+Reopened,Conservatorship ONLY,Ambiguous,170,N
+Utah,2019,Initiated+Reopened,Guardianship ONLY,Adults ONLY,823,Y
+Utah,2019,Initiated+Reopened,Guardianship ONLY,Minors ONLY,1002,N
+Vermont,2019,Initiated+Reopened,G+C+Joint,Adults ONLY,512,Y
+Vermont,2019,Initiated+Reopened,G+C+Joint,Minors ONLY,440,N
+Virginia,2019,Initiated ONLY,Guardianship ONLY,Adults ONLY,789,Y
+Virginia,2019,Initiated ONLY,Conservatorship ONLY,Adults ONLY,277,N
+Virginia,2019,Initiated ONLY,Joint G/C ONLY,Adults ONLY,1729,Y
+Washington,2019,Initiated ONLY,G+C+Joint,Adults ONLY,2987,Y
