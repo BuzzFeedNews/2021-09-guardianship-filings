@@ -14,6 +14,10 @@ Much of the data we did collect was unusable for our primary goal, which was to 
 
 Ultimately, 23 jurisdictions (22 states and DC) had data fully usable for the main analyses presented here. Although this number represents fewer than half the states in the US, it appears to be the largest published sample of such filing counts to date. Another 12 states had data we could use for a sub-analysis. Below we describe the data collected, how we analyzed it, and the caveats associated with the estimates. This repository also contains [the data we used](data/) and [a computational notebook](notebooks/analyze-filing-counts.ipynb) written in Python.
 
+### Updates
+
+__Note__: Since publication, states have provided BuzzFeed News with additional data and information. Incorporating it does not substantially change the results of the analysis but it does contribute to public knowledge about adult guardianship filings, so we are sharing those updates in a new branch of this repository, which you can [view here](https://github.com/BuzzFeedNews/2021-09-guardianship-filings/tree/updates).
+
 ## Data description
 
 Our analysis focuses on the reporting years that ended in 2019, the most recent year not affected by the COVID-19 pandemic. (For some states this is calendar year 2019, while for others it is a fiscal year.) Where possible, we also collected data for other years, and include those figures in this repository so that other researchers may use them. Similarly, we have also collected and included other data points we are not using directly in the analysis. (The records we are not using, however, have not been as carefully vetted, and should be examined closely before being used.)
