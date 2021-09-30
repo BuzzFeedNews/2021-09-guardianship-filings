@@ -1,3 +1,7 @@
+### *Note*: This branch of the repository contains updates, based on new information received after its initial publication. Incorporating this new information expands the data available to the public and does not substantially change the results of the analysis. See the “Overview” section below for details. [Click here](https://github.com/BuzzFeedNews/2021-09-guardianship-filings) to return to the original documenation, data, and analysis.
+
+---
+
 # Analysis of US adult guardianship filing counts
 
 This repository and document describes BuzzFeed News’ analysis of data on adult guardianship filings in US courts, supporting [this investigative article](https://buzzfeednews.com/article/heidiblake/conservatorship-investigation-free-britney-spears), published September 17, 2021. Please see that article to understand the full context.
@@ -12,7 +16,13 @@ For decades, experts and advocates have bemoaned the lack of consistent data on 
 
 Much of the data we did collect was unusable for our primary goal, which was to estimate the annual number of adult guardianship cases filed. Some states, for instance, did not separate guardianships of adults from those of minors. Other states’ figures were unusably incomplete or displayed extreme variation from year to year without any clear cause or explanation.
 
-Ultimately, 23 jurisdictions (22 states and DC) had data fully usable for the main analyses presented here. Although this number represents fewer than half the states in the US, it appears to be the largest published sample of such filing counts to date. Another 12 states had data we could use for a sub-analysis. Below we describe the data collected, how we analyzed it, and the caveats associated with the estimates. This repository also contains [the data we used](data/) and [a computational notebook](notebooks/analyze-filing-counts.ipynb) written in Python.
+*Originally*, 23 jurisdictions (22 states and DC) had data fully usable for the main analyses presented here. Although this number represents fewer than half the states in the US, it appears to be the largest published sample of such filing counts to date. Another 12 states had data we could use for a sub-analysis. Below we describe the data collected, how we analyzed it, and the caveats associated with the estimates. This repository also contains [the data we used](data/) and [a computational notebook](notebooks/analyze-filing-counts.ipynb) written in Python.
+
+### Updates and additions
+
+- __New Jersey__: At the time of initial publication, New Jersey had not provided BuzzFeed News with adult guardianship counts. It has since provided them, and we have added those counts to our dataset and analysis. (Update incorporated September 30, 2021.)
+
+- __West Virginia__: At the time of initial publication, BuzzFeed News determined it could not use the state’s data due to an ambiguity regarding whether its figures included guardianships of minors. West Virginia has since clarified that it did not, so BuzzFeed News has recategorized West Virginia’s counts in our dataset and has added it to the analysis. (Update incorporated September 30, 2021.)
 
 ## Data description
 
@@ -40,9 +50,9 @@ States provided various categorizations of cases, even among the jurisdictions w
 
 For some jurisdictions, we are able to count both cases *initiated* and cases *reopened*, which comes closest to the count we want. Here we follow the Court Statistics Project's "[Guide to Statistical Reporting](https://www.courtstatistics.org/__data/assets/pdf_file/0026/23984/state-court-guide-to-statistical-reporting.pdf)," which calls for including both new cases and reopened cases in the total count of incoming cases. For others, we have only cases initiated, or the state’s figures do not make clear whether they include case reopenings.
 
-The definition of guardianship also varies from state to state, with some states making clearer distinctions than others — in nomenclature or legal status — between various arrangements. The most common distinction is between managing the *personal affairs* of a ward and managing their *financial affairs*, what many states call “conservatorship.” In these states, guardians and conservators are often appointed in the same case. For some states, these distinctions are represented in the data; for others they are not. To avoid double-counting, we have excluded conservatorships where the states’ figures explicitly count those types of cases separately.  
+The definition of guardianship also varies from state to state, with some states making clearer distinctions than others — in nomenclature or legal status — between various arrangements. The most common distinction is between managing the *personal affairs* of a ward and managing their *financial affairs*, what many states call “conservatorship.” In these states, guardians and conservators are often appointed in the same case. For some states, these distinctions are represented in the data; for others they are not. To avoid double-counting, we have excluded conservatorships where the states’ figures explicitly count those types of cases separately.
 
-Here’s how our data for each of the 23 jurisdictions differs in these respects:
+Here’s how our data for each of the jurisdictions in the main analysis differs in these respects:
 
 | Jurisdiction         | Includes Reopenings?\* | Excludes Conservatorships? |
 |----------------------|------------------------|----------------------------|
@@ -60,6 +70,7 @@ Here’s how our data for each of the 23 jurisdictions differs in these respects
 | Missouri             | ?                      | N                          |
 | Nebraska             | ?                      | N                          |
 | New Hampshire        | N                      | N                          |
+| New Jersey           | Y                      | N                          |
 | New Mexico           | Y                      | Y                          |
 | North Dakota         | ?                      | Y                          |
 | Ohio                 | Y                      | Y                          |
@@ -69,6 +80,7 @@ Here’s how our data for each of the 23 jurisdictions differs in these respects
 | Vermont              | Y                      | N                          |
 | Virginia             | N                      | Y                          |
 | Washington           | N                      | N                          |
+| West Virginia        | ?                      | N                          |
 
 
 \* For jurisdictions that follow the Court Statistics Project reporting guidelines, we set `Includes Reopenings?` to `Y`, even if the relevant data source does not explicitly say the count includes reopenings. 
@@ -80,11 +92,11 @@ Additionally, the various ways that jurisdictions *count* guardianship cases may
 
 The primary goal of our analysis is to estimate a national count of adult guardianship filings in recent years. Extrapolating a national estimate from a relatively small sample can be difficult, so we sought advice from statisticians, and used their feedback to develop the methodology, which we sketch in general terms below and in more detail in [our computational notebook](notebooks/analyze-filing-counts.ipynb).
 
-Our two main approaches involve calculating the annual __rate of filings per capita__ (specifically, per 100,000 adults) for each of our 23 jurisdictions, and then using those rates to estimate a range of possible counts for the remaining 28 states.
+Our two main approaches involve calculating the annual __rate of filings per capita__ (specifically, per 100,000 adults) for each of our jurisdictions with fully-usable data, and then using those rates to estimate a range of possible counts for the remaining states.
 
-The first approach is to use those rates directly in a “bootstrap” analysis. Each “unknown” state has its adult population size multiplied by a per capita rate *randomly* selected from one of the 23 known rates, producing a hypothetical filing count for that state. Those filing counts are summed to produce a total and that total is added to the total for our 23 known jurisdictions. We repeat this procedure 10,000 times to produce a distribution of likely results.
+The first approach is to use those rates directly in a “bootstrap” analysis. Each “unknown” state has its adult population size multiplied by a per capita rate *randomly* selected from one of the known rates, producing a hypothetical filing count for that state. Those filing counts are summed to produce a total and that total is added to the total for our known jurisdictions. We repeat this procedure 10,000 times to produce a distribution of likely results.
 
-Our second approach uses a statistical model to try smoothing out the choppiness inherent in our relatively small sample. We do so by fitting a negative binomial distribution to our observed data, and then using that distribution to generate, randomly, the hypothetical filing rates for the remaining 28 states. Whereas the bootstrap allows those rates only to be one of the 23 we have observed, this approach allows an infinite possibility of rates, but with their probabilities shaped by our observed data.
+Our second approach uses a statistical model to try smoothing out the choppiness inherent in our relatively small sample. We do so by fitting a negative binomial distribution to our observed data, and then using that distribution to generate, randomly, the hypothetical filing rates for the remaining states. Whereas the bootstrap allows those rates only to be one of those we have observed, this approach allows an infinite possibility of rates, but with their probabilities shaped by our observed data.
 
 Although we don't have fully usable data from states that do not disambiguate between guardianships of adults and those of minors, we can still use this information to construct some bounds. There cannot be, for instance, more adult guardianship filings in these states than there are total adult+minor filings combined. And adult guardianship filings are likely to be some substantial portion of those filings. We conduct an analysis that tests the effect of various such proportions on our final estimates.
 

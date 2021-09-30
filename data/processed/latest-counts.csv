@@ -46,6 +46,7 @@ Missouri,2019,Ambiguous,G+C+Joint,Minors ONLY,4200,N
 Nebraska,2019,Ambiguous,G+C+Joint,Adults ONLY,2109,Y
 New Hampshire,2019,Initiated ONLY,G+C+Joint,Adults ONLY,945,Y
 New Hampshire,2019,Initiated ONLY,G+C+Joint,Minors ONLY,90,N
+New Jersey,2019,Initiated+Reopened,G+C+Joint,Adults ONLY,3039,Y
 New Mexico,2019,Initiated ONLY,Guardianship ONLY,Adults ONLY,240,Y
 New Mexico,2019,Reopened ONLY,Guardianship ONLY,Adults ONLY,42,Y
 New Mexico,2019,Initiated ONLY,Conservatorship ONLY,Adults ONLY,18,N
@@ -76,3 +77,4 @@ Virginia,2019,Initiated ONLY,Guardianship ONLY,Adults ONLY,789,Y
 Virginia,2019,Initiated ONLY,Conservatorship ONLY,Adults ONLY,277,N
 Virginia,2019,Initiated ONLY,Joint G/C ONLY,Adults ONLY,1729,Y
 Washington,2019,Initiated ONLY,G+C+Joint,Adults ONLY,2987,Y
+West Virginia,2019,Ambiguous,G+C+Joint,Adults ONLY,894,Y

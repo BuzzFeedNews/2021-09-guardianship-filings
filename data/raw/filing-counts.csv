@@ -213,6 +213,10 @@ New Hampshire,2018,Initiated ONLY,G+C+Joint,Adults ONLY,959,Y
 New Hampshire,2018,Initiated ONLY,G+C+Joint,Minors ONLY,110,N
 New Hampshire,2017,Initiated ONLY,G+C+Joint,Adults ONLY,951,Y
 New Hampshire,2017,Initiated ONLY,G+C+Joint,Minors ONLY,129,N
+New Jersey,2017,Initiated+Reopened,G+C+Joint,Adults ONLY,2773,Y
+New Jersey,2018,Initiated+Reopened,G+C+Joint,Adults ONLY,2927,Y
+New Jersey,2019,Initiated+Reopened,G+C+Joint,Adults ONLY,3039,Y
+New Jersey,2020,Initiated+Reopened,G+C+Joint,Adults ONLY,2720,Y
 New Mexico,2019,Initiated ONLY,Guardianship ONLY,Adults ONLY,240,Y
 New Mexico,2019,Reopened ONLY,Guardianship ONLY,Adults ONLY,42,Y
 New Mexico,2019,Initiated ONLY,Conservatorship ONLY,Adults ONLY,18,N
@@ -369,11 +373,11 @@ Washington,2020,Initiated ONLY,G+C+Joint,Adults ONLY,2824,Y
 Washington,2019,Initiated ONLY,G+C+Joint,Adults ONLY,2987,Y
 Washington,2018,Initiated ONLY,G+C+Joint,Adults ONLY,2801,Y
 Washington,2017,Initiated ONLY,G+C+Joint,Adults ONLY,3005,Y
-West Virginia,2020,Ambiguous,G+C+Joint,Ambiguous,718,Y
-West Virginia,2019,Ambiguous,G+C+Joint,Ambiguous,894,Y
-West Virginia,2018,Ambiguous,G+C+Joint,Ambiguous,826,Y
-West Virginia,2017,Ambiguous,G+C+Joint,Ambiguous,828,Y
-West Virginia,2016,Ambiguous,G+C+Joint,Ambiguous,752,Y
+West Virginia,2020,Ambiguous,G+C+Joint,Adults ONLY,718,Y
+West Virginia,2019,Ambiguous,G+C+Joint,Adults ONLY,894,Y
+West Virginia,2018,Ambiguous,G+C+Joint,Adults ONLY,826,Y
+West Virginia,2017,Ambiguous,G+C+Joint,Adults ONLY,828,Y
+West Virginia,2016,Ambiguous,G+C+Joint,Adults ONLY,752,Y
 Wisconsin,2020,Initiated+Reopened,G+C+Joint,Adults+Minors,5624,Y
 Wisconsin,2019,Initiated+Reopened,G+C+Joint,Adults+Minors,6051,Y
 Wisconsin,2018,Initiated+Reopened,G+C+Joint,Adults+Minors,6180,Y
